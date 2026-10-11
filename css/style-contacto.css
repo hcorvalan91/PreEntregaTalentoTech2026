@@ -1,0 +1,147 @@
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto {
+    max-width: 700px;
+
+    margin: 20px auto;
+
+    padding: 40px;
+
+    background-color: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow: 0 8px 25px rgba(63, 52, 46, 0.10);
+}
+
+
+/* Presentación */
+
+.contacto-presentacion {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.contacto-presentacion h2 {
+    font-size: 2rem;
+
+    color: #6b5145;
+
+    margin-bottom: 15px;
+}
+
+.contacto-presentacion p {
+    color: #5f5048;
+
+    line-height: 1.7;
+
+    font-size: 1.05rem;
+}
+
+
+/* Cada campo */
+
+.campo {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 22px;
+}
+
+
+/* Labels */
+
+.campo label {
+    margin-bottom: 8px;
+
+    color: #6b5145;
+
+    font-weight: 600;
+}
+
+
+/* Inputs */
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #d8ccc5;
+
+    border-radius: 8px;
+
+    background-color: #fdfbf9;
+
+    color: #3f342e;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Cuando hacemos clic */
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #8a6f61;
+
+    box-shadow: 0 0 0 3px rgba(138, 111, 97, 0.15);
+}
+
+
+/* Textarea */
+
+.campo textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+
+/* Botón */
+
+.formulario-contacto button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #3f342e;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #6b5145;
+
+    transform: translateY(-2px);
+}
+

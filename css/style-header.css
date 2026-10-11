@@ -1,0 +1,145 @@
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    position: relative;
+
+    height: 420px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================
+   IMÁGENES DEL HERO
+========================= */
+
+.hero-slide {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0;
+
+    animation: cambiarImagen 15s infinite;
+}
+
+
+/* Imagen 1 */
+
+.slide-1 {
+    background-image: url("../assets/img/header-img-1.png");
+
+    animation-delay: 0s;
+}
+
+
+/* Imagen 2 */
+
+.slide-2 {
+    background-image: url("../assets/img/header-img-2.png");
+
+    animation-delay: 5s;
+}
+
+
+/* Imagen 3 */
+
+.slide-3 {
+    background-image: url("../assets/img/header-img-3.png");
+
+    animation-delay: 10s;
+}
+
+
+/* =========================
+   CAPA OSCURA
+========================= */
+
+.hero-overlay {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(63, 52, 46, 0.30);
+
+    z-index: 1;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.hero-contenido {
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    padding: 25px 40px;
+}
+
+.hero-contenido h1 {
+    font-size: 3.5rem;
+
+    margin-bottom: 10px;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.hero-contenido p {
+    font-size: 1.4rem;
+
+    color: #f7f3ee;
+
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   ANIMACIÓN
+========================= */
+
+@keyframes cambiarImagen {
+
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    38% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}

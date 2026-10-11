@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-contacto.css">
+</head>
+
+<body>
+
+    <header> 
+        <h1>Contacto</h1>
+        <p>Madame Ivonne - Piezas de Yeso</p>
+    </header>
+
+    <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#nosotros">Nosotros</a></li>
+                <li><a href="../index.html#productos">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+    </nav>
+
+    <main>
+
+    <section class="contacto">
+
+        <div class="contacto-presentacion">
+            <h2>Escribinos...</h2>
+
+            <p>
+                Contactate con nosotros. Dejanos tu consulta y tus datos
+                para que podamos comunicarnos con vos.
+            </p>
+        </div>
+
+        <form
+            class="formulario-contacto"
+            action="https://formspree.io/f/xaenlvoo"
+            method="POST"
+        >
+
+            <div class="campo">
+                <label for="nombre">Nombre y Apellido</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre_y_apellido"
+                    placeholder="Tu nombre"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="tunombre@email.com"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="whatsapp">WhatsApp</label>
+
+                <input
+                    type="tel"
+                    id="whatsapp"
+                    name="whatsapp"
+                    placeholder="Tu número de WhatsApp"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="6"
+                    placeholder="Escribí tu consulta..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit">
+                Enviar consulta
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+    <footer>
+        <p>&copy; 2026 Madame Ivonne - Todos los derechos reservados.</p>  
+        
+        <a
+        href="https://www.instagram.com/pieza.yeso/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-link"
+    >
+        Seguinos en Instagram
+    </a>
+
+    </footer>
+
+    
+    
+</body>
+</html>
